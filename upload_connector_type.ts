@@ -2,7 +2,7 @@ import * as admin from 'firebase-admin';
 import * as fs from 'fs';
 
 // Replace with the correct relative path to your service account key
-const serviceAccount = require('../eumecon-firebase-json.json');
+const serviceAccount = require('./firebase_keys/firebase-key.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
