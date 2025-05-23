@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "firebase-admin": "^13.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "upload-amenities": "npx ts-node upload.ts",
+    "upload-type": "npx ts-node upload_connector_type.ts",
+    "print-amenities": "npx ts-node print.ts"
+  }
+}
