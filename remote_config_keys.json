@@ -62,6 +62,12 @@
             },
             "valueType": "STRING"
         },
+        "terms_and_condition": {
+            "defaultValue": {
+                "value": "https://hled.is/"
+            },
+            "valueType": "STRING"
+        },
         "partner_branding_enabled": {
             "defaultValue": {
                 "value": "false"
