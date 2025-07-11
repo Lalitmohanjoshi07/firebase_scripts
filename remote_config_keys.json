@@ -68,6 +68,12 @@
             },
             "valueType": "BOOLEAN"
         },
+        "wallet_enabled": {
+            "defaultValue": {
+                "value": "false"
+            },
+            "valueType": "BOOLEAN"
+        },
         "payment_profile_enabled": {
             "defaultValue": {
                 "value": "false"
