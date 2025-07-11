@@ -27,8 +27,8 @@ async function publishTemplate() {
         const fileContents = fs.readFileSync(CONFIG_FILE, 'utf8');
         const localTemplate = config.createTemplateFromJSON(fileContents);
         remoteTemplate.parameters = {
+            ...localTemplate.parameters,
             ...remoteTemplate.parameters,
-            ...localTemplate.parameters
         };
 
         if (localTemplate.conditions) {
