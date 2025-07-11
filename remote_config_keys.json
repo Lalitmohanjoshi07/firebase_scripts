@@ -1,0 +1,91 @@
+{
+    "conditions": [
+        {
+            "name": "iOS",
+            "expression": "device.os == 'ios'",
+            "tagColor": "INDIGO"
+        },
+        {
+            "name": "Android",
+            "expression": "device.os == 'android'",
+            "tagColor": "TEAL"
+        }
+    ],
+    "parameters": {
+        "app_download_url": {
+            "defaultValue": {
+                "value": "{\"android\":\"https://play.google.com/store/apps/details?id=com.app_name.app&pli=1\",\"ios\":\"https://apps.apple.com/us/app/app_name/id_appID\"}"
+            },
+            "valueType": "JSON"
+        },
+        "app_update_url": {
+            "defaultValue": {
+                "value": ""
+            },
+            "conditionalValues": {
+                "iOS": {
+                    "value": "https://apps.apple.com/us/app/app_name/id-appID"
+                },
+                "Android": {
+                    "value": "https://play.google.com/store/apps/details?id=com.app_name.app&pli=1"
+                }
+            },
+            "valueType": "STRING"
+        },
+        "app_blocker_screen": {
+            "defaultValue": {
+                "value": "{  \"show_btn\": false,  \"title\": \"\",  \"message\": \"\",  \"btn_link\": \"\",  \"btn_title\": \"\",  \"valid\": false}"
+            },
+            "valueType": "JSON"
+        },
+        "minimum_app_version": {
+            "defaultValue": {
+                "value": "1.0.0"
+            },
+            "valueType": "STRING"
+        },
+        "app_support_email": {
+            "defaultValue": {
+                "value": "thjonusta@hled.is"
+            },
+            "valueType": "STRING"
+        },
+        "app_support_phone": {
+            "defaultValue": {
+                "value": "5131919"
+            },
+            "valueType": "STRING"
+        },
+        "app_about_url": {
+            "defaultValue": {
+                "value": "https://hled.is/"
+            },
+            "valueType": "STRING"
+        },
+        "partner_branding_enabled": {
+            "defaultValue": {
+                "value": "false"
+            },
+            "valueType": "BOOLEAN"
+        },
+        "payment_profile_enabled": {
+            "defaultValue": {
+                "value": "false"
+            },
+            "valueType": "BOOLEAN"
+        },
+        "app_privacy_policy": {
+            "defaultValue": {
+                "value": "https://hled.web.app/privacy-policy"
+            },
+            "valueType": "STRING"
+        },
+        "app_subscription_enabled": {
+            "defaultValue": {
+                "value": "false"
+            },
+            "valueType": "BOOLEAN"
+        }
+    },
+    "etag": "*"
+}

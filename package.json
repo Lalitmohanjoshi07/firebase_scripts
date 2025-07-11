@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "firebase-admin": "^13.3.0"
+    "axios": "^1.10.0",
+    "exceljs": "^4.4.0",
+    "firebase-admin": "^13.4.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.1",
@@ -9,7 +11,11 @@
   },
   "scripts": {
     "upload-amenities": "npx ts-node upload.ts",
+    "upload-remote-config": "npx ts-node upload_remote_configs.ts",
+    "get-remote-config": "npx ts-node get_remote_config.ts",
+    "create-excel-from-arb": "npx ts-node ./arb_to_excel/convert.ts",
     "upload-type": "npx ts-node upload_connector_type.ts",
+    "upload-tax-catalog": "npx ts-node upload_tax_catalog.ts",
     "print-amenities": "npx ts-node print.ts"
   }
 }

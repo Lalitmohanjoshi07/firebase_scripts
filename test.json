@@ -1,0 +1,25 @@
+{
+    "room_schema": {
+        "id": "string",
+        "created_at": "timestamp",
+        "updated_at": "timestamp",
+        "sender_id": "string",
+        "reciever_id": "string",
+        "room_id": [ "user1_id", 
+            "user1_id",
+            "user2_id"
+        ]
+    },
+    "message_schema": {
+        "type": "text/image",
+        "has_read": "boolean",
+        "msg": "string | null",
+        "image_url": "string | null",
+        "created_at": "timestamp",
+        "metadata": {
+            "sender_id": "string",
+            "reciever_id": "string",
+            "room_id": ["user1_id", "user2_id"]
+        }
+    }
+}
