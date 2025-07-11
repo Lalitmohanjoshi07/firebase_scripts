@@ -1,5 +1,4 @@
 import fs from 'fs';
-import axios from 'axios';
 import * as admin from 'firebase-admin'
 import * as path from 'path';
 
@@ -14,7 +13,7 @@ const serviceAccount = require(path.resolve(SERVICE_ACCOUNT_KEY_PATH));
 if (!admin.apps.length) {
     admin.initializeApp({
         credential: admin.credential.cert(serviceAccount),
-        projectId: PROJECT_ID, // optional if in JSON
+        projectId: PROJECT_ID,
     }, 'instance');
 }
 
