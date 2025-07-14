@@ -3,7 +3,7 @@ import * as admin from 'firebase-admin'
 import * as path from 'path';
 
 
-const PROJECT_ID = 'hled-production'; // <-- replace this
+const PROJECT_ID = process.env.PROJECT_ID; 
 const SERVICE_ACCOUNT_KEY_PATH = './firebase_keys/firebase-key.json';
 
 const CONFIG_FILE = './remote_config_keys.json';

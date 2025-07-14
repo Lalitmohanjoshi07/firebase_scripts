@@ -2,7 +2,7 @@ import * as admin from 'firebase-admin'
 import fs from 'fs';
 import * as path from 'path';
 
-const PROJECT_ID = 'hled-production'; // <-- replace this
+const PROJECT_ID = process.env.PROJECT_ID; 
 const SERVICE_ACCOUNT_KEY_PATH = './firebase_keys/firebase-key.json';
 
 const serviceAccount = require(path.resolve(SERVICE_ACCOUNT_KEY_PATH));

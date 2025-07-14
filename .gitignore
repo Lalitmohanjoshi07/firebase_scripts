@@ -1,4 +1,5 @@
 node_modules/
 firebase_keys/*.json
+firebase_keys/*.txt
 result/
 arb/
