@@ -12,73 +12,11 @@
         }
     ],
     "parameters": {
-        "app_download_url": {
+        "country_lat_lng": {
             "defaultValue": {
-                "value": "{\"android\":\"https://play.google.com/store/apps/details?id=com.app_name.app&pli=1\",\"ios\":\"https://apps.apple.com/us/app/app_name/id_appID\"}"
-            },
-            "valueType": "JSON"
-        },
-        "app_update_url": {
-            "defaultValue": {
-                "value": ""
-            },
-            "conditionalValues": {
-                "iOS": {
-                    "value": "https://apps.apple.com/us/app/app_name/id-appID"
-                },
-                "Android": {
-                    "value": "https://play.google.com/store/apps/details?id=com.app_name.app&pli=1"
-                }
+                "value": "[30.044449, 31.2360362]"
             },
             "valueType": "STRING"
-        },
-        "app_blocker_screen": {
-            "defaultValue": {
-                "value": "{  \"show_btn\": false,  \"title\": \"\",  \"message\": \"\",  \"btn_link\": \"\",  \"btn_title\": \"\",  \"valid\": false}"
-            },
-            "valueType": "JSON"
-        },
-        "minimum_app_version": {
-            "defaultValue": {
-                "value": "1.0.0"
-            },
-            "valueType": "STRING"
-        },
-        "app_support_email": {
-            "defaultValue": {
-                "value": "thjonusta@hled.is"
-            },
-            "valueType": "STRING"
-        },
-        "app_support_phone": {
-            "defaultValue": {
-                "value": "5131919"
-            },
-            "valueType": "STRING"
-        },
-        "app_about_url": {
-            "defaultValue": {
-                "value": "https://hled.is/"
-            },
-            "valueType": "STRING"
-        },
-        "terms_and_condition": {
-            "defaultValue": {
-                "value": "https://hled.is/"
-            },
-            "valueType": "STRING"
-        },
-        "partner_branding_enabled": {
-            "defaultValue": {
-                "value": "false"
-            },
-            "valueType": "BOOLEAN"
-        },
-        "wallet_enabled": {
-            "defaultValue": {
-                "value": "false"
-            },
-            "valueType": "BOOLEAN"
         },
         "payment_profile_enabled": {
             "defaultValue": {
@@ -88,7 +26,93 @@
         },
         "app_privacy_policy": {
             "defaultValue": {
-                "value": "https://hled.web.app/privacy-policy"
+                "value": "https://electrachargers.com/terms"
+            },
+            "valueType": "STRING"
+        },
+        "partner_branding_enabled": {
+            "defaultValue": {
+                "value": "false"
+            },
+            "valueType": "BOOLEAN"
+        },
+        "country_code_digit": {
+            "defaultValue": {
+                "value": "+20"
+            },
+            "valueType": "STRING"
+        },
+        "app_currency": {
+            "defaultValue": {
+                "value": "EGP"
+            },
+            "valueType": "STRING"
+        },
+        "coupon_enable": {
+            "defaultValue": {
+                "value": "false"
+            },
+            "valueType": "BOOLEAN"
+        },
+        "app_blocker_screen": {
+            "defaultValue": {
+                "value": "{  \"show_btn\": false,  \"title\": \"\",  \"message\": \"\",  \"btn_link\": \"\",  \"btn_title\": \"\",  \"valid\": false}"
+            },
+            "valueType": "JSON"
+        },
+        "app_support_email": {
+            "defaultValue": {
+                "value": "support@electrachargers.com"
+            },
+            "valueType": "STRING"
+        },
+        "terms_and_condition": {
+            "defaultValue": {
+                "value": "https://electrachargers.com/terms"
+            },
+            "valueType": "STRING"
+        },
+        "app_about_url": {
+            "defaultValue": {
+                "value": "https://electrachargers.com/"
+            },
+            "valueType": "STRING"
+        },
+        "app_support_phone": {
+            "defaultValue": {
+                "value": "15547"
+            },
+            "valueType": "STRING"
+        },
+        "app_download_url": {
+            "defaultValue": {
+                "value": "{\"android\":\"https://play.google.com/store/apps/details?id=com.raya.electra&pli=1\",\"ios\":\"https://apps.apple.com/us/app/electraraya/id6748648646\"}"
+            },
+            "valueType": "JSON"
+        },
+        "wallet_enabled": {
+            "defaultValue": {
+                "value": "true"
+            },
+            "valueType": "BOOLEAN"
+        },
+        "app_update_url": {
+            "defaultValue": {
+                "value": ""
+            },
+            "conditionalValues": {
+                "iOS": {
+                    "value": "https://apps.apple.com/us/app/electraraya/id6748648646"
+                },
+                "Android": {
+                    "value": "https://play.google.com/store/apps/details?id=com.raya.electra&pli=1"
+                }
+            },
+            "valueType": "STRING"
+        },
+        "country_code": {
+            "defaultValue": {
+                "value": "EG"
             },
             "valueType": "STRING"
         },
@@ -97,7 +121,53 @@
                 "value": "false"
             },
             "valueType": "BOOLEAN"
+        },
+        "web_app_url": {
+            "defaultValue": {
+                "value": "electra-lite.web.app"
+            },
+            "valueType": "STRING"
+        },
+        "minimum_app_version": {
+            "defaultValue": {
+                "value": "1.0.0"
+            },
+            "valueType": "STRING"
+        },
+        "app_support_url": {
+            "defaultValue": {
+                "value": "https://electrachargers.com/support"
+            },
+            "valueType": "STRING"
+        },
+        "app_favourite_charger_enabled": {
+            "defaultValue": {
+                "value": "false"
+            },
+            "valueType": "BOOLEAN"
+        },
+        "app_delete_policy": {
+            "defaultValue": {
+                "value": "https://portal-electra.web.app/delete-policy"
+            },
+            "valueType": "STRING"
+        },
+        "app_configuration": {
+            "defaultValue": {
+                "value": "{\"reservation_enabled\":false,\"coupon_enabled\":false,\"schedule_enabled\":false,\"rfid_cards_enabled\":true,\"partner_branding_enabled\":false,\"payment_profile_enabled\":false,\"app_subscription_enabled\":false,\"app_favourite_charger_enabled\":false,\"wallet_enabled\":true,\"is_custom_to_stormi\":false}"
+            },
+            "valueType": "JSON"
         }
     },
-    "etag": "*"
+    "parameterGroups": {},
+    "etag": "etag-1084330859506-29",
+    "version": {
+        "versionNumber": "29",
+        "updateOrigin": "CONSOLE",
+        "updateType": "INCREMENTAL_UPDATE",
+        "updateUser": {
+            "email": "lalit.joshi@evoltsoft.com"
+        },
+        "updateTime": "Mon, 04 Aug 2025 08:29:49 GMT"
+    }
 }
