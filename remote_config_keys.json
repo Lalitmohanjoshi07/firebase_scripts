@@ -1,1 +1,155 @@
-{"conditions":[{"name":"iOS","expression":"device.os == 'ios'","tagColor":"INDIGO"},{"name":"Android","expression":"device.os == 'android'","tagColor":"TEAL"}],"parameters":{"app_configuration":{"defaultValue":{"value":"{\"reservation_enabled\":false,\"coupon_enabled\":false,\"schedule_enabled\":true,\"rfid_cards_enabled\":true,\"partner_branding_enabled\":false,\"payment_profile_enabled\":false,\"app_subscription_enabled\":false,\"app_favourite_charger_enabled\":false,\"wallet_enabled\":false,\"is_custom_to_stormi\":false,\"flutter_map_enabled\":true,\"has_monthly_billing\":true,\"display_evse_name\":true}"},"valueType":"JSON"},"wallet_enabled":{"defaultValue":{"value":"false"},"valueType":"BOOLEAN"},"country_code_digit":{"defaultValue":{"value":"+20"},"valueType":"STRING"},"app_update_url":{"defaultValue":{"value":""},"conditionalValues":{"iOS":{"value":"https://apps.apple.com/us/app/hled/id6748601479"},"Android":{"value":"https://play.google.com/store/apps/details?id=com.hled.app&pli=1"}},"valueType":"STRING"},"display_evse_name":{"defaultValue":{"value":"true"},"valueType":"BOOLEAN"},"app_support_phone":{"defaultValue":{"value":"5131919"},"valueType":"STRING"},"payment_profile_enabled":{"defaultValue":{"value":"false"},"valueType":"BOOLEAN"},"partner_branding_enabled":{"defaultValue":{"value":"false"},"valueType":"BOOLEAN"},"app_blocker_screen":{"defaultValue":{"value":"{  \"show_btn\": false,  \"title\": \"\",  \"message\": \"\",  \"btn_link\": \"\",  \"btn_title\": \"\",  \"valid\": false}"},"valueType":"JSON"},"app_privacy_policy":{"defaultValue":{"value":"https://portal-hled.web.app/privacy-policy"},"valueType":"STRING"},"app_download_url":{"defaultValue":{"value":"{\"android\":\"https://play.google.com/store/apps/details?id=com.hled.app&pli=1\",\"ios\":\"https://apps.apple.com/us/app/hled/id6748601479\"}"},"valueType":"JSON"},"app_delete_policy":{"defaultValue":{"value":"https://portal-hled.web.app/delete-policy"},"valueType":"STRING"},"app_support_url":{"defaultValue":{"value":"https://portal-hled.web.app/support-policy"},"valueType":"STRING"},"terms_and_condition":{"defaultValue":{"value":"https://portal-hled.web.app/privacy-policy"},"valueType":"STRING"},"app_currency":{"defaultValue":{"value":"ISK"},"valueType":"STRING"},"app_about_url":{"defaultValue":{"value":"https://hled.is/"},"valueType":"STRING"},"country_code":{"defaultValue":{"value":"IS"},"valueType":"STRING"},"app_support_email":{"defaultValue":{"value":"thjonusta@hled.is"},"valueType":"STRING"},"minimum_app_version":{"defaultValue":{"value":"1.0.19"},"valueType":"STRING"},"country_lat_lng":{"defaultValue":{"value":"[64.905812, -18.484047]"},"valueType":"STRING"},"coupon_enable":{"defaultValue":{"value":"false"},"valueType":"BOOLEAN"},"app_favourite_charger_enabled":{"defaultValue":{"value":"false"},"valueType":"BOOLEAN"},"web_app_url":{"defaultValue":{"value":"hled-lite.web.app"},"valueType":"STRING"},"app_subscription_enabled":{"defaultValue":{"value":"false"},"valueType":"BOOLEAN"}},"parameterGroups":{},"etag":"etag-126727075128-26","version":{"versionNumber":"26","updateOrigin":"CONSOLE","updateType":"INCREMENTAL_UPDATE","updateUser":{"email":"dhruvin.shiyani@evoltsoft.com"},"updateTime":"Tue, 07 Oct 2025 06:13:52 GMT"}}
+{
+    "conditions": [
+        {
+            "name": "iOS",
+            "expression": "device.os == 'ios'",
+            "tagColor": "INDIGO"
+        },
+        {
+            "name": "Android",
+            "expression": "device.os == 'android'",
+            "tagColor": "TEAL"
+        }
+    ],
+    "parameters": {
+        "app_update_url": {
+            "defaultValue": {
+                "value": ""
+            },
+            "conditionalValues": {
+                "iOS": {
+                    "value": "https://apps.apple.com/us/app/cve/id6753944730"
+                },
+                "Android": {
+                    "value": "https://play.google.com/store/apps/details?id=com.app.cve&pli=1"
+                }
+            },
+            "valueType": "STRING"
+        },
+        "app_download_url": {
+            "defaultValue": {
+                "value": "{\"android\":\"https://play.google.com/store/apps/details?id=com.app.cve&pli=1\",\"ios\":\"https://apps.apple.com/us/app/cve/id6753944730\"}"
+            },
+            "valueType": "JSON"
+        },
+        "app_privacy_policy": {
+            "defaultValue": {
+                "value": "https://cve-angola.web.app/privacy-policy"
+            },
+            "valueType": "STRING"
+        },
+        "app_blocker_screen": {
+            "defaultValue": {
+                "value": "{  \"show_btn\": false,  \"title\": \"\",  \"message\": \"\",  \"btn_link\": \"\",  \"btn_title\": \"\",  \"valid\": false}"
+            },
+            "valueType": "JSON"
+        },
+        "app_support_phone": {
+            "defaultValue": {
+                "value": ""
+            },
+            "valueType": "STRING"
+        },
+        "payment_chip_values": {
+            "defaultValue": {
+                "value": "[50.00, 100.00, 150.00]"
+            },
+            "valueType": "STRING"
+        },
+        "country_lat_lng": {
+            "defaultValue": {
+                "value": "[-9.105473,13.684341]"
+            },
+            "valueType": "STRING"
+        },
+        "app_configuration": {
+            "defaultValue": {
+                "value": "{\"reservation_enabled\":true,\"coupon_enabled\":true,\"schedule_enabled\":true,\"rfid_cards_enabled\":true,\"app_favourite_charger_enabled\":true,\"flutter_map_enabled\":true,\"has_monthly_billing\":false,\"wallet_enabled\":true,\"wallet_topup_enabled\":false,\"payment_profile_enabled\":false,\"app_subscription_enabled\":false,\"display_evse_name\":false,\"partner_branding_enabled\":false,\"is_custom_to_stormi\":false}"
+            },
+            "valueType": "JSON"
+        },
+        "app_support": {
+            "defaultValue": {
+                "value": "{\"url\":\"https://portal-cve.web.app/support-policy\",\"email\":\"info@cve-angola.com\",\"phone\":\"\"}"
+            },
+            "valueType": "JSON"
+        },
+        "app_delete_policy": {
+            "defaultValue": {
+                "value": "https://cve-angola.web.app/delete-policy"
+            },
+            "valueType": "STRING"
+        },
+        "app_currency": {
+            "defaultValue": {
+                "value": "AOA"
+            },
+            "valueType": "STRING"
+        },
+        "web_app_url": {
+            "defaultValue": {
+                "value": "cve-lite.web.app"
+            },
+            "valueType": "STRING"
+        },
+        "app_support_email": {
+            "defaultValue": {
+                "value": "info@cve-angola.com"
+            },
+            "valueType": "STRING"
+        },
+        "country_details": {
+            "defaultValue": {
+                "value": "{\"code\":\"AO\",\"code_digit\":\"+244\",\"lat_lng\":[64.905812,-18.484047]}"
+            },
+            "valueType": "JSON"
+        },
+        "minimum_app_version": {
+            "defaultValue": {
+                "value": "1.0.0"
+            },
+            "valueType": "STRING"
+        },
+        "terms_and_condition": {
+            "defaultValue": {
+                "value": ""
+            },
+            "valueType": "STRING"
+        },
+        "country_code_digit": {
+            "defaultValue": {
+                "value": "+244"
+            },
+            "valueType": "STRING"
+        },
+        "country_code": {
+            "defaultValue": {
+                "value": "AO"
+            },
+            "valueType": "STRING"
+        },
+        "app_support_url": {
+            "defaultValue": {
+                "value": "https://cve-angola.web.app/support-policy"
+            },
+            "valueType": "STRING"
+        },
+        "app_about_url": {
+            "defaultValue": {
+                "value": "https://cve-angola.com/sobre-nos/"
+            },
+            "valueType": "STRING"
+        }
+    },
+    "parameterGroups": {},
+    "etag": "etag-286436578815-14",
+    "version": {
+        "versionNumber": "14",
+        "updateOrigin": "CONSOLE",
+        "updateType": "INCREMENTAL_UPDATE",
+        "updateUser": {
+            "email": "dhruvin.shiyani@evoltsoft.com"
+        },
+        "updateTime": "Wed, 15 Oct 2025 18:15:05 GMT"
+    }
+}
