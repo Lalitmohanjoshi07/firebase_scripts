@@ -1,28 +1,94 @@
 {
     "conditions": [
         {
-            "name": "ios",
+            "name": "iOS",
             "expression": "device.os == 'ios'",
             "tagColor": "INDIGO"
         },
         {
-            "name": "android",
+            "name": "Android",
             "expression": "device.os == 'android'",
             "tagColor": "TEAL"
         }
     ],
     "parameters": {
+        "app_support_url": {
+            "defaultValue": {
+                "value": "https://wecharge-hyper-fast.web.app/support-policy"
+            },
+            "valueType": "STRING"
+        },
+        "country_details": {
+            "defaultValue": {
+                "value": "{\"code\":\"PH\",\"code_digit\":\"+63\",\"lat_lng\":[12.1538479,117.1558004]}"
+            },
+            "valueType": "JSON"
+        },
+        "app_support_email": {
+            "defaultValue": {
+                "value": ""
+            },
+            "valueType": "STRING"
+        },
+        "app_currency": {
+            "defaultValue": {
+                "value": "PHP"
+            },
+            "valueType": "STRING"
+        },
+        "country_lat_lng": {
+            "defaultValue": {
+                "value": "[12.1538479,117.1558004]"
+            },
+            "valueType": "STRING"
+        },
+        "app_support": {
+            "defaultValue": {
+                "value": "{\"url\":\"https://wecharge-hyper-fast.web.app/support-policy\",\"email\":\"\",\"phone\":\"\"}"
+            },
+            "valueType": "JSON"
+        },
+        "app_about_url": {
+            "defaultValue": {
+                "value": "https://wecharge-hyper-fast.web.app/"
+            },
+            "valueType": "STRING"
+        },
+        "web_app_url": {
+            "defaultValue": {
+                "value": "wecharge-hyper-fast.web-lite.app"
+            },
+            "valueType": "STRING"
+        },
         "app_update_url": {
             "defaultValue": {
                 "value": ""
             },
             "conditionalValues": {
                 "iOS": {
-                    "value": "https://apps.apple.com/us/app/cve/id6753944730"
+                    "value": "https://apps.apple.com/us/app/wecharge/id6753944730"
                 },
                 "Android": {
-                    "value": "https://play.google.com/store/apps/details?id=com.app.cve&pli=1"
+                    "value": "https://play.google.com/store/apps/details?id=com.wecharge.app&pli=1"
                 }
+            },
+            "valueType": "STRING"
+        },
+        "country_code_digit": {
+            "defaultValue": {
+                "value": "+63"
+            },
+            "valueType": "STRING"
+        },
+        "country_code": {
+            "defaultValue": {
+                "value": "PH"
+            },
+            "valueType": "STRING"
+        },
+        "app_privacy_policy": {
+            "defaultValue": {
+                "value": "https://wecharge-hyper-fast.web.app/privacy-policy"
             },
             "valueType": "STRING"
         },
@@ -32,81 +98,9 @@
             },
             "valueType": "JSON"
         },
-        "app_privacy_policy": {
-            "defaultValue": {
-                "value": "https://cve-angola.web.app/privacy-policy"
-            },
-            "valueType": "STRING"
-        },
-        "app_blocker_screen": {
-            "defaultValue": {
-                "value": "{  \"show_btn\": false,  \"title\": \"\",  \"message\": \"\",  \"btn_link\": \"\",  \"btn_title\": \"\",  \"valid\": false}"
-            },
-            "valueType": "JSON"
-        },
-        "app_support_phone": {
-            "defaultValue": {
-                "value": ""
-            },
-            "valueType": "STRING"
-        },
         "payment_chip_values": {
             "defaultValue": {
                 "value": "[50.00, 100.00, 150.00]"
-            },
-            "valueType": "STRING"
-        },
-        "country_lat_lng": {
-            "defaultValue": {
-                "value": "[-9.105473,13.684341]"
-            },
-            "valueType": "STRING"
-        },
-        "app_configuration": {
-            "defaultValue": {
-                "value": "{\"reservation_enabled\":true,\"coupon_enabled\":true,\"schedule_enabled\":true,\"rfid_cards_enabled\":true,\"app_favourite_charger_enabled\":true,\"flutter_map_enabled\":true,\"has_monthly_billing\":false,\"wallet_enabled\":true,\"wallet_topup_enabled\":false,\"payment_profile_enabled\":false,\"app_subscription_enabled\":false,\"display_evse_name\":false,\"partner_branding_enabled\":false,\"is_custom_to_stormi\":false}"
-            },
-            "valueType": "JSON"
-        },
-        "app_support": {
-            "defaultValue": {
-                "value": "{\"url\":\"https://portal-cve.web.app/support-policy\",\"email\":\"info@cve-angola.com\",\"phone\":\"\"}"
-            },
-            "valueType": "JSON"
-        },
-        "app_delete_policy": {
-            "defaultValue": {
-                "value": "https://cve-angola.web.app/delete-policy"
-            },
-            "valueType": "STRING"
-        },
-        "app_currency": {
-            "defaultValue": {
-                "value": "AOA"
-            },
-            "valueType": "STRING"
-        },
-        "web_app_url": {
-            "defaultValue": {
-                "value": "cve-lite.web.app"
-            },
-            "valueType": "STRING"
-        },
-        "app_support_email": {
-            "defaultValue": {
-                "value": "info@cve-angola.com"
-            },
-            "valueType": "STRING"
-        },
-        "country_details": {
-            "defaultValue": {
-                "value": "{\"code\":\"AO\",\"code_digit\":\"+244\",\"lat_lng\":[64.905812,-18.484047]}"
-            },
-            "valueType": "JSON"
-        },
-        "minimum_app_version": {
-            "defaultValue": {
-                "value": "1.0.0"
             },
             "valueType": "STRING"
         },
@@ -116,40 +110,46 @@
             },
             "valueType": "STRING"
         },
-        "country_code_digit": {
+        "app_support_phone": {
             "defaultValue": {
-                "value": "+244"
+                "value": ""
             },
             "valueType": "STRING"
         },
-        "country_code": {
+        "app_delete_policy": {
             "defaultValue": {
-                "value": "AO"
+                "value": "https://cve-angola.web.app/delete-policy"
             },
             "valueType": "STRING"
         },
-        "app_support_url": {
+        "app_blocker_screen": {
             "defaultValue": {
-                "value": "https://cve-angola.web.app/support-policy"
+                "value": "{  \"show_btn\": false,  \"title\": \"\",  \"message\": \"\",  \"btn_link\": \"\",  \"btn_title\": \"\",  \"valid\": false}"
             },
-            "valueType": "STRING"
+            "valueType": "JSON"
         },
-        "app_about_url": {
+        "app_configuration": {
             "defaultValue": {
-                "value": "https://cve-angola.com/sobre-nos/"
+                "value": "{\"reservation_enabled\":true,\"coupon_enabled\":true,\"schedule_enabled\":true,\"rfid_cards_enabled\":true,\"app_favourite_charger_enabled\":true,\"flutter_map_enabled\":true,\"has_monthly_billing\":false,\"wallet_enabled\":true,\"wallet_topup_enabled\":false,\"payment_profile_enabled\":false,\"app_subscription_enabled\":false,\"display_evse_name\":false,\"partner_branding_enabled\":false,\"is_custom_to_stormi\":false}"
+            },
+            "valueType": "JSON"
+        },
+        "minimum_app_version": {
+            "defaultValue": {
+                "value": "1.0.0"
             },
             "valueType": "STRING"
         }
     },
     "parameterGroups": {},
-    "etag": "etag-286436578815-14",
+    "etag": "etag-894091724483-2",
     "version": {
-        "versionNumber": "14",
+        "versionNumber": "2",
         "updateOrigin": "CONSOLE",
         "updateType": "INCREMENTAL_UPDATE",
         "updateUser": {
             "email": "dhruvin.shiyani@evoltsoft.com"
         },
-        "updateTime": "Wed, 15 Oct 2025 18:15:05 GMT"
+        "updateTime": "Thu, 16 Oct 2025 10:20:45 GMT"
     }
 }
