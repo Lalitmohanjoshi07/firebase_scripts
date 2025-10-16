@@ -12,47 +12,31 @@
         }
     ],
     "parameters": {
-        "country_lat_lng": {
+        "app_update_url": {
             "defaultValue": {
-                "value": "[30.044449, 31.2360362]"
+                "value": ""
+            },
+            "conditionalValues": {
+                "iOS": {
+                    "value": "https://apps.apple.com/us/app/cve/id6753944730"
+                },
+                "Android": {
+                    "value": "https://play.google.com/store/apps/details?id=com.app.cve&pli=1"
+                }
             },
             "valueType": "STRING"
         },
-        "payment_profile_enabled": {
+        "app_download_url": {
             "defaultValue": {
-                "value": "false"
+                "value": "{\"android\":\"https://play.google.com/store/apps/details?id=com.app.cve&pli=1\",\"ios\":\"https://apps.apple.com/us/app/cve/id6753944730\"}"
             },
-            "valueType": "BOOLEAN"
+            "valueType": "JSON"
         },
         "app_privacy_policy": {
             "defaultValue": {
-                "value": "https://electrachargers.com/terms"
+                "value": "https://cve-angola.web.app/privacy-policy"
             },
             "valueType": "STRING"
-        },
-        "partner_branding_enabled": {
-            "defaultValue": {
-                "value": "false"
-            },
-            "valueType": "BOOLEAN"
-        },
-        "country_code_digit": {
-            "defaultValue": {
-                "value": "+20"
-            },
-            "valueType": "STRING"
-        },
-        "app_currency": {
-            "defaultValue": {
-                "value": "EGP"
-            },
-            "valueType": "STRING"
-        },
-        "coupon_enable": {
-            "defaultValue": {
-                "value": "false"
-            },
-            "valueType": "BOOLEAN"
         },
         "app_blocker_screen": {
             "defaultValue": {
@@ -60,73 +44,65 @@
             },
             "valueType": "JSON"
         },
-        "app_support_email": {
-            "defaultValue": {
-                "value": "support@electrachargers.com"
-            },
-            "valueType": "STRING"
-        },
-        "terms_and_condition": {
-            "defaultValue": {
-                "value": "https://electrachargers.com/terms"
-            },
-            "valueType": "STRING"
-        },
-        "app_about_url": {
-            "defaultValue": {
-                "value": "https://electrachargers.com/"
-            },
-            "valueType": "STRING"
-        },
         "app_support_phone": {
-            "defaultValue": {
-                "value": "15547"
-            },
-            "valueType": "STRING"
-        },
-        "app_download_url": {
-            "defaultValue": {
-                "value": "{\"android\":\"https://play.google.com/store/apps/details?id=com.raya.electra&pli=1\",\"ios\":\"https://apps.apple.com/us/app/electraraya/id6748648646\"}"
-            },
-            "valueType": "JSON"
-        },
-        "wallet_enabled": {
-            "defaultValue": {
-                "value": "true"
-            },
-            "valueType": "BOOLEAN"
-        },
-        "app_update_url": {
             "defaultValue": {
                 "value": ""
             },
-            "conditionalValues": {
-                "ios": {
-                    "value": "https://apps.apple.com/us/app/electraraya/id6748648646"
-                },
-                "android": {
-                    "value": "https://play.google.com/store/apps/details?id=com.raya.electra&pli=1"
-                }
+            "valueType": "STRING"
+        },
+        "payment_chip_values": {
+            "defaultValue": {
+                "value": "[50.00, 100.00, 150.00]"
             },
             "valueType": "STRING"
         },
-        "country_code": {
+        "country_lat_lng": {
             "defaultValue": {
-                "value": "EG"
+                "value": "[-9.105473,13.684341]"
             },
             "valueType": "STRING"
         },
-        "app_subscription_enabled": {
+        "app_configuration": {
             "defaultValue": {
-                "value": "false"
+                "value": "{\"reservation_enabled\":true,\"coupon_enabled\":true,\"schedule_enabled\":true,\"rfid_cards_enabled\":true,\"app_favourite_charger_enabled\":true,\"flutter_map_enabled\":true,\"has_monthly_billing\":false,\"wallet_enabled\":true,\"wallet_topup_enabled\":false,\"payment_profile_enabled\":false,\"app_subscription_enabled\":false,\"display_evse_name\":false,\"partner_branding_enabled\":false,\"is_custom_to_stormi\":false}"
             },
-            "valueType": "BOOLEAN"
+            "valueType": "JSON"
+        },
+        "app_support": {
+            "defaultValue": {
+                "value": "{\"url\":\"https://portal-cve.web.app/support-policy\",\"email\":\"info@cve-angola.com\",\"phone\":\"\"}"
+            },
+            "valueType": "JSON"
+        },
+        "app_delete_policy": {
+            "defaultValue": {
+                "value": "https://cve-angola.web.app/delete-policy"
+            },
+            "valueType": "STRING"
+        },
+        "app_currency": {
+            "defaultValue": {
+                "value": "AOA"
+            },
+            "valueType": "STRING"
         },
         "web_app_url": {
             "defaultValue": {
-                "value": "electra-lite.web.app"
+                "value": "cve-lite.web.app"
             },
             "valueType": "STRING"
+        },
+        "app_support_email": {
+            "defaultValue": {
+                "value": "info@cve-angola.com"
+            },
+            "valueType": "STRING"
+        },
+        "country_details": {
+            "defaultValue": {
+                "value": "{\"code\":\"AO\",\"code_digit\":\"+244\",\"lat_lng\":[64.905812,-18.484047]}"
+            },
+            "valueType": "JSON"
         },
         "minimum_app_version": {
             "defaultValue": {
@@ -134,40 +110,46 @@
             },
             "valueType": "STRING"
         },
+        "terms_and_condition": {
+            "defaultValue": {
+                "value": ""
+            },
+            "valueType": "STRING"
+        },
+        "country_code_digit": {
+            "defaultValue": {
+                "value": "+244"
+            },
+            "valueType": "STRING"
+        },
+        "country_code": {
+            "defaultValue": {
+                "value": "AO"
+            },
+            "valueType": "STRING"
+        },
         "app_support_url": {
             "defaultValue": {
-                "value": "https://electrachargers.com/support"
+                "value": "https://cve-angola.web.app/support-policy"
             },
             "valueType": "STRING"
         },
-        "app_favourite_charger_enabled": {
+        "app_about_url": {
             "defaultValue": {
-                "value": "false"
-            },
-            "valueType": "BOOLEAN"
-        },
-        "app_delete_policy": {
-            "defaultValue": {
-                "value": "https://portal-electra.web.app/delete-policy"
+                "value": "https://cve-angola.com/sobre-nos/"
             },
             "valueType": "STRING"
-        },
-        "app_configuration": {
-            "defaultValue": {
-                "value": "{\"reservation_enabled\":false,\"coupon_enabled\":false,\"schedule_enabled\":false,\"rfid_cards_enabled\":true,\"partner_branding_enabled\":false,\"payment_profile_enabled\":false,\"app_subscription_enabled\":false,\"app_favourite_charger_enabled\":false,\"wallet_enabled\":true,\"is_custom_to_stormi\":false}"
-            },
-            "valueType": "JSON"
         }
     },
     "parameterGroups": {},
-    "etag": "etag-1084330859506-29",
+    "etag": "etag-286436578815-14",
     "version": {
-        "versionNumber": "29",
+        "versionNumber": "14",
         "updateOrigin": "CONSOLE",
         "updateType": "INCREMENTAL_UPDATE",
         "updateUser": {
-            "email": "lalit.joshi@evoltsoft.com"
+            "email": "dhruvin.shiyani@evoltsoft.com"
         },
-        "updateTime": "Mon, 04 Aug 2025 08:29:49 GMT"
+        "updateTime": "Wed, 15 Oct 2025 18:15:05 GMT"
     }
 }
