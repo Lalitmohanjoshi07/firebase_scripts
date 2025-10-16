@@ -17,7 +17,7 @@ interface Product {
 }
 
 // Load and parse JSON data
-const rawData = fs.readFileSync('amenities.json', 'utf-8');
+const rawData = fs.readFileSync('amenities_addavolt.json', 'utf-8');
 const data = JSON.parse(rawData);
 
 async function uploadData(): Promise<void> {

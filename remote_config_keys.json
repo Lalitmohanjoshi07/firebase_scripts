@@ -1,12 +1,12 @@
 {
     "conditions": [
         {
-            "name": "iOS",
+            "name": "ios",
             "expression": "device.os == 'ios'",
             "tagColor": "INDIGO"
         },
         {
-            "name": "Android",
+            "name": "android",
             "expression": "device.os == 'android'",
             "tagColor": "TEAL"
         }
@@ -101,10 +101,10 @@
                 "value": ""
             },
             "conditionalValues": {
-                "iOS": {
+                "ios": {
                     "value": "https://apps.apple.com/us/app/electraraya/id6748648646"
                 },
-                "Android": {
+                "android": {
                     "value": "https://play.google.com/store/apps/details?id=com.raya.electra&pli=1"
                 }
             },
